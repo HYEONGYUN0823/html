@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function sa(x, y) {
+        //     let res;
+
+        //     if (x == 0 && y == 0) {
+        //         res = "원점";
+        //     } else if (x == 0 || y == 0) {
+        //         if (x == 0) {
+        //             res = "y선에 있음";
+        //         } else {
+        //             res = "x선에 있음"
+        //         }
+        //     } else {
+        //         if (x > 0) {
+        //             if (y > 0) {
+        //                 res = "1사분면";
+        //             } else {
+        //                 res = "4사분면";
+        //             }
+        //         } else if (x < 0) {
+        //             if (y > 0) {
+        //                 res = "2사분면";
+        //             } else {
+        //                 res = "3사분면";
+        //             }
+        //         }
+        //     }
+
+        //     return res;
+        // }
+
+        // var sa1 = sa(0, 1);
+        // alert(sa1);
+
+        function number(number) {
+            let res;
+            if (number % 2 == 0) {
+                res = "짝수";
+            } else {
+                res = "홀수"
+            }
+
+            return res;
+        }
+
+        for (let i = 0; i < 10; i++) {
+            var ran = number(Math.floor(Math.random() * 10));
+            console.log(ran);
+        }
+    </script>
+</body>
+
+</html>
