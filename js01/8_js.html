@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // "장원영"을 입력 받으면 "이쁘다"를 출력
+
+        //  "전지현"을 입력 받으면 "잠잔다"를 출력
+
+        // 단 switch 문을 사용하여 만들 것
+
+        function singer(a) {
+            let result;
+
+            switch (a) {
+                case "장원영":
+                    result = "이쁘다";
+                    break;
+                case "전지현":
+                    result = "잠잔다";
+                    break;
+                default:
+                    result = "다시 입력하세요.";
+                    break;
+            }
+
+            return result;
+        }
+
+        var sin = singer("전지현");
+        alert(sin);
+    </script>
+</body>
+
+</html>
